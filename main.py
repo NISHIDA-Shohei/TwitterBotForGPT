@@ -202,7 +202,7 @@ def generate_tweet(retry_count, result):
     result = result.strip('"') 
     character_count = int(parse_tweet(result).weightedLength)
     
-    if 1 <= character_count <= 4000: 
+    if 1 <= character_count <= 3000: 
         try:
             if image_result:
                 # Download image from URL
